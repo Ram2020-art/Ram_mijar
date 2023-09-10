@@ -1,5 +1,5 @@
 // Constants
-const ACTIVE_TIME_MS = 3000;
+const ACTIVE_TIME_MS = 5000;
 const DEACTIVATION_TIME_MS = 750;
 
 // Variables
