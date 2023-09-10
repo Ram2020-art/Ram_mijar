@@ -159,7 +159,7 @@
 .command-list > li:nth-child(4) { transform: translateX(35px) translateY(-55px); }
 .command-list > li:nth-child(4):hover ~ .hey-felix::after { content: "Hey Random, tell me a joke."; }
 .command-list > li:nth-child(5) { transform: translateX(15px) translateY(-15px); }
-.command-list > li:nth-child(5):hover ~ .hey-felix::after { content: "Hey Felix..."; }
+.command-list > li:nth-child(5):hover ~ .hey-felix::after { content: "Hey there..."; }
 .command-list > li:nth-child(6) { transform: translateX(-100px) translateY(45px); }
 .command-list > li:nth-child(6):hover ~ .hey-felix::after { content: "Hey Random, what inspires you?"; }
 
