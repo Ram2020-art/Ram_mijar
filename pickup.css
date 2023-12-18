@@ -1,0 +1,167 @@
+/* Import font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+/* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Body styles */
+body {
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #7f7fd5;
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+/* Image styles */
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Card styles */
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+
+/* Card body styles */
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+/* Tag styles */
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-blue {
+  background: #56CCF2;
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #D1913C;
+  background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+/* Card footer styles */
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* User styles */
+.user {
+  display: flex;
+  gap: .5rem;
+}
+
+/* User image styles */
+.user__image {
+  border-radius: 50%;
+}
+
+/* User info styles */
+.user__info > small {
+  color: #666;
+}
+
+
+/* New Button Styles */
+.generate-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000; /* Black text color */
+  background-color: #fff; /* White background color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Black text shadow */
+}
+
+
+
+
+
+/* Card styles */
+.card {
+  position: relative;
+}
+
+/* Button styles */
+.generate-btn {
+  position: absolute;
+  bottom: 25px; /* Adjust the distance from the bottom as needed */
+  right: 25px; /* Adjust the distance from the right as needed */
+  display: inline-block;
+  padding: 10px 15px; /* Adjust padding for a smaller button */
+  font-size: 12px; /* Adjust font size for a smaller button */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000; /* Black text color */
+  background-color: #fff; /* White background color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Black text shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+
+  &:hover {
+    background-color: #f2f2f2; /* Light gray background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly increased box shadow on hover */
+  }
+
+  &:active {
+    transform: scale(0.96);
+    box-shadow: none; /* Remove box shadow on click */
+  }
+}
