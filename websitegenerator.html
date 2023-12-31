@@ -3,60 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Creation Platform</title>
+    <title>Personal Page</title>
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #fff;
             color: #333;
             display: flex;
             flex-direction: column;
             align-items: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
+
         header, footer {
-            background-color: #2c3e50;
-            color: #ecf0f1;
+            background-color: #fff;
+            color: #333;
             text-align: center;
             padding: 1em;
             width: 100%;
         }
+
         section {
             max-width: 800px;
             margin: 20px;
             text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
+
         nav {
-            background-color: #34495e;
-            color: #ecf0f1;
+            background-color: #fff;
+            color: #333;
             padding: 0.5em;
             width: 100%;
         }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav li {
-            margin: 0 15px;
-        }
+
         form {
             max-width: 600px;
             width: 80%;
-            padding: 30px;
             background-color: #fff;
+            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
         }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
+
         input,
         textarea {
             width: 100%;
@@ -65,21 +60,13 @@
             box-sizing: border-box;
             border: 1px solid #ccc;
             border-radius: 6px;
-            background-color: #f9f9f9;
+            background-color: #fff;
             transition: border-color 0.3s;
             font-family: 'Montserrat', sans-serif;
         }
-        input[type="text"][name="aboutPhotoUrl"],
-        input[type="text"][name="homePhotoUrl"] {
-            display: none;
-        }
-        input:focus,
-        textarea:focus {
-            outline: none;
-            border-color: #3498db;
-        }
+
         button {
-            background-color: #3498db;
+            background-color: #333;
             color: #fff;
             padding: 15px;
             border: none;
@@ -88,9 +75,11 @@
             font-size: 18px;
             transition: background-color 0.3s;
         }
+
         button:hover {
-            background-color: #2980b9;
+            background-color: #555;
         }
+
         #generatedWebsite {
             margin-top: 30px;
             text-align: left;
@@ -100,39 +89,31 @@
     <script src="generator.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Website Creation Platform</h1>
-    </header>
-
-    <section>
-        <p>Create a personalized website effortlessly by filling out the form below. Watch as our intuitive system crafts a unique online presence for you. Experience the ease of Website Creation Platform.</p>
-        
-        <form id="websiteForm">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="hobby">Your Hobby:</label>
-            <input type="text" id="hobby" name="hobby" required>
-
-            <label for="homePhotoUrl">Upload Home Photo:</label>
-            <input type="file" accept="image/*" id="homePhotoUrl" name="homePhotoUrl" required>
-
-            <label for="aboutPhotoUrl">Upload About Photo:</label>
-            <input type="file" accept="image/*" id="aboutPhotoUrl" name="aboutPhotoUrl" required>
-
-            <label for="bio">Your Bio:</label>
-            <textarea id="bio" name="bio" rows="4" required></textarea>
-
-            <button type="button" onclick="generateWebsite()">Generate Website</button>
-        </form>
-
-        <div id="generatedWebsite"></div>
-    </section>
     
+
+    <h5><p style="text-align:center;">Ready to Showcase Your Work? Create Your Personal Page Now!</p></h5>
+    
+    
+
+    <form id="websiteForm">
+        
+        <p style="text-align:center;">PERSONAL DETAILS</p>
+<p style="text-align:center; font-size:small;">We will never sell it</p>
+
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="text" id="hobby" name="hobby" placeholder="Your Hobby" required>
+        <input type="file" accept="image/*" id="homePhotoUrl" name="homePhotoUrl" required>
+        <input type="file" accept="image/*" id="aboutPhotoUrl" name="aboutPhotoUrl" required>
+        <textarea id="bio" name="bio" rows="4" placeholder="Write a brief bio" required></textarea>
+        <button type="button" onclick="generateWebsite()">Generate Website</button>
+    </form>
+
+    <div id="generatedWebsite"></div>
+
     <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ramijar2020" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
     <footer>
-        <p>&copy; 2023 Ram Mijar All rights reserved.</p>
+        <h6><p>&copy; 2023 Ram Mijar All rights reserved.</p></h6>
     </footer>
 </body>
 </html>
