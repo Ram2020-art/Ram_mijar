@@ -69,6 +69,10 @@
             transition: border-color 0.3s;
             font-family: 'Montserrat', sans-serif;
         }
+        input[type="text"][name="aboutPhotoUrl"],
+        input[type="text"][name="homePhotoUrl"] {
+            display: none;
+        }
         input:focus,
         textarea:focus {
             outline: none;
@@ -100,8 +104,6 @@
         <h1>Website Creation Platform</h1>
     </header>
 
-
-
     <section>
         <p>Create a personalized website effortlessly by filling out the form below. Watch as our intuitive system crafts a unique online presence for you. Experience the ease of Website Creation Platform.</p>
         
@@ -112,11 +114,11 @@
             <label for="hobby">Your Hobby:</label>
             <input type="text" id="hobby" name="hobby" required>
 
-            <label for="homePhotoUrl">Home Photo URL:</label>
-            <input type="text" id="homePhotoUrl" name="homePhotoUrl" required>
+            <label for="homePhotoUrl">Upload Home Photo:</label>
+            <input type="file" accept="image/*" id="homePhotoUrl" name="homePhotoUrl" required>
 
-            <label for="aboutPhotoUrl">About Photo URL:</label>
-            <input type="text" id="aboutPhotoUrl" name="aboutPhotoUrl" required>
+            <label for="aboutPhotoUrl">Upload About Photo:</label>
+            <input type="file" accept="image/*" id="aboutPhotoUrl" name="aboutPhotoUrl" required>
 
             <label for="bio">Your Bio:</label>
             <textarea id="bio" name="bio" rows="4" required></textarea>
@@ -127,8 +129,7 @@
         <div id="generatedWebsite"></div>
     </section>
     
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ramijar2020" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ramijar2020" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
     <footer>
         <p>&copy; 2023 Ram Mijar All rights reserved.</p>

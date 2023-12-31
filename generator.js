@@ -12,15 +12,24 @@ function generateWebsite() {
     // Get values from the form inputs
     var name = document.getElementById('name').value;
     var hobby = document.getElementById('hobby').value;
-    var homePhotoUrl = document.getElementById('homePhotoUrl').value;
-    var aboutPhotoUrl = document.getElementById('aboutPhotoUrl').value;
-    var bio = document.getElementById('bio').value;
+    
+    var homePhotoFileInput = document.getElementById('homePhotoUrl');
+var homePhotoUrl = homePhotoFileInput.files.length > 0 ? URL.createObjectURL(homePhotoFileInput.files[0]) : '';
+
+
+    // Updated variable names for about picture
+    var aboutPhotoFileInput = document.getElementById('aboutPhotoUrl');
 
     // Simulate a delay for demonstration purposes (remove this in production)
     setTimeout(function () {
+        // Updated variable name for about picture
+        var aboutPhotoUrl = aboutPhotoFileInput.files.length > 0 ? URL.createObjectURL(aboutPhotoFileInput.files[0]) : '';
+
+        // Get bio from the textarea
+        var bio = document.getElementById('bio').value;
+
         // Construct the website content using the entered data
         var websiteContent = `
-        
         
         <!DOCTYPE html>
         <html lang="en">
@@ -104,8 +113,10 @@ function generateWebsite() {
             <section class="home section" id="home">
                 <div class="home_container container grid">
                     <div class="home_img">
-                    <img src="${homePhotoUrl}" alt="Home Photo">
-                </div>
+    <img src="${homePhotoUrl}" alt="Home Photo">
+</div>
+
+
                 
                     </div>
 
