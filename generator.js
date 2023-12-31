@@ -351,7 +351,7 @@ var homePhotoUrl = homePhotoFileInput.files.length > 0 ? URL.createObjectURL(hom
 
                         <div>
                             <h3 class="contact_title">Email</h3>
-                            <span class="contact_subtitle">neupanebimal821@gmail.com</span>
+                            <span class="contact_subtitle">${name}2025@gmail.com</span>
                         </div>
                     </div>
                     <div class="contact_information">
