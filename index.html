@@ -295,6 +295,129 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
         <!-- End Slider Area -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+           <!-- start  service section -->
+        
+        
+        
+    <div class="rn-contact-area rn-section-gap section-separator" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <span class="subtitle">Services</span>
+                    <h2 class="title">What I Can Do</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt--50 mt_md--40 mt_sm--40 mt-contact-sm">
+            <div class="col-lg-5">
+                <div class="contact-about-area">
+                    <div class="thumbnail">
+                        <img src="images/service.png" alt="service-img">
+                    </div>
+                    <div class="title-area">
+                        <h4 class="title">Ram Mijar</h4>
+                        <span>BCA Student</span>
+                    </div>
+                    <div class="description">
+                        <p>I offer various IT services:</p>
+                        <ul class="service-list">
+                            <li><a href="#" onclick="showService(event, 'service1')">Ethical Hacking</a></li>
+                            <li><a href="#" onclick="showService(event, 'service2')">Linux System Administration</a></li>
+                            <li><a href="#" onclick="showService(event, 'service3')">Network Security Analysis</a></li>
+                            <li><a href="#" onclick="showService(event, 'service4')">Web Development</a></li>
+                            <li><a href="#" onclick="showService(event, 'service5')">Database Management</a></li>
+                            <li><a href="#" onclick="showService(event, 'service6')">Landing Page Design</a></li>
+                            <li><a href="#" onclick="showService(event, 'service7')">Portfolio Website Creation</a></li>
+                            <!-- Add more services with unique IDs -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div data-aos-delay="600" class="col-lg-7 contact-input">
+                <div class="contact-form-wrapper">
+                    <div class="introduce">
+                        <!-- This section will show service details on click -->
+                        <div id="service1" class="service-details hidden">
+                            <h3>Ethical Hacking</h3>
+                            <p>Protect systems and networks from unauthorized access or malicious activities.</p>
+                        </div>
+                        <div id="service2" class="service-details hidden">
+                            <h3>Linux System Administration</h3>
+                            <p>Manage and maintain Linux servers, ensuring optimal performance and security.</p>
+                        </div>
+                        <div id="service3" class="service-details hidden">
+                            <h3>Network Security Analysis</h3>
+                            <p>Analyze network traffic and configurations to identify and mitigate security risks.</p>
+                        </div>
+                        <div id="service4" class="service-details hidden">
+                            <h3>Web Development</h3>
+                            <p>Design and develop responsive websites using HTML, CSS, and JavaScript.</p>
+                        </div>
+                        <div id="service5" class="service-details hidden">
+                            <h3>Database Management</h3>
+                            <p>Create and manage databases, ensuring data integrity and efficient retrieval.</p>
+                        </div>
+                        <div id="service6" class="service-details hidden">
+                            <h3>Landing Page Design</h3>
+                            <p>Create visually appealing landing pages to capture leads and drive conversions.</p>
+                        </div>
+                        <div id="service7" class="service-details hidden">
+                            <h3>Portfolio Website Creation</h3>
+                            <p>Build professional portfolio websites to showcase skills, projects, and achievements.</p>
+                        </div>
+                        <!-- Add more service details sections as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Hide service details by default */
+.service-details {
+    display: none;
+}
+
+/* Show service details when active */
+.service-details.active {
+    display: block;
+}
+</style>
+
+<script>
+// Function to show service details
+function showService(event, id) {
+    event.preventDefault();
+    const targetService = document.getElementById(id);
+    
+    // Hide all service details
+    document.querySelectorAll('.service-details').forEach(detail => {
+        detail.classList.remove('active');
+    });
+
+    // Show clicked service detail
+    targetService.classList.add('active');
+}
+</script>
+
+
+
+
+ <!-- End server section -->
+ 
 	      
 
    
@@ -394,6 +517,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         
         <!-- End Contuct section -->
+        
+      
+
+
+
         
     </main>
     <!-- Start Footer Area -->
