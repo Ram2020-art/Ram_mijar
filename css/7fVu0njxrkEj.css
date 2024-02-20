@@ -19707,18 +19707,3 @@ body.white-version .rn-btn-ulderline {
 /*# sourceMappingURL=../maps/style.css.map */
 
 
-
-.btn-group {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
-}
-
-.btn-secondary {
-  background: var(--background-color-2);
-  border-color: var(--border-width);
-  color: var(--color-tertiary);
-}
-
-.btn-primary { border-color: var(--color-primary); }
