@@ -40,11 +40,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 :root {
-  --color-primary: #ff014f;
+  --color-primary: #1fff01;
   --color-secondary: #f4f5f6;
   --color-tertiary: #0d1013;
   --color-gray: #f6f6f6;
-  --color-subtitle: #f9004d;
+  --color-subtitle: #00f936;
   --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
   --background-color-2: #212428;
   --shadow-1: 10px 10px 19px #1c1e22,
@@ -53,9 +53,9 @@
   --inner-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
   --shadow-white-3: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
   --gradient-box-w: linear-gradient(145deg, #e2e8ec, #ffffff);
-  --gradient-red-hover: linear-gradient(145deg, #ff014f, #d11414);
-  --color-heading: #ffffff;
-  --color-heading-wv: #1e2125;
+  --gradient-red-hover: linear-gradient(145deg, #01ff16, #14d124);
+  --color-heading: #24f511;
+  --color-heading-wv: #22ee0f;
   --color-body: #878e99;
   --color-body-white: #3c3e41;
   --color-lightn: #c4cfde;
@@ -64,17 +64,17 @@
   --color-lighter: #CED0D4;
   --color-lightest: #F0F2F5;
   --color-border: #E6E6E6;
-  --color-white: #ffffff;
+  --color-white: #23f507;
   --color-white-75: rgba(255, 255, 255, 0.75);
-  --color-success: #3EB75E;
-  --color-danger: #FF0003;
-  --color-warning: #FF8F3C;
+  --color-success: #3eb73e;
+  --color-danger: #00ff22;
+  --color-warning: #73ff3c;
   --color-info: #1BA2DB;
   --color-facebook: #3B5997;
   --color-twitter: #1BA1F2;
-  --color-youtube: #ED4141;
-  --color-linkedin: #0077B5;
-  --color-pinterest: #E60022;
+  --color-youtube: #4fed41;
+  --color-linkedin: #00b527;
+  --color-pinterest: #00e600;
   --color-instagram: #C231A1;
   --color-vimeo: #00ADEF;
   --color-twitch: #6441A3;
@@ -12720,7 +12720,7 @@ figcaption {
   }
 }
 .slide .content .inner .title span {
-  color: #ff014f;
+  color: #01ff2b;
 }
 .slide .content .inner .title .header-caption span {
   color: var(--color-white);
@@ -19705,3 +19705,20 @@ body.white-version .rn-btn-ulderline {
   color: var(--color-white) !important;
 }
 /*# sourceMappingURL=../maps/style.css.map */
+
+
+
+.btn-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-secondary {
+  background: var(--background-color-2);
+  border-color: var(--border-width);
+  color: var(--color-tertiary);
+}
+
+.btn-primary { border-color: var(--color-primary); }
