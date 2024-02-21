@@ -561,23 +561,7 @@
           <h2 class="h2 article-title">Resume</h2>
 
         </header>
-        <button id="downloadButton">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-            <path fill="#00cc00" d="M12 2c-1.1 0-2 .9-2 2v10h-3l4 4 4-4h-3V4c0-1.1-.9-2-2-2z"/>
-          </svg>
-          <span style="color: #10f108;">Download Resume</span>
-        </button>
         
-        <script>
-        document.getElementById("downloadButton").addEventListener("click", function() {
-          var link = document.createElement("a");
-          link.download = "Your_CV_Name.pdf";
-          link.href = "assets/images/CV.pdf";
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        });
-        </script>
         
 
 <br><br>        
@@ -609,7 +593,25 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">KMC</h4>
+              <h4<button id="downloadButton">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path fill="#00cc00" d="M12 2c-1.1 0-2 .9-2 2v10h-3l4 4 4-4h-3V4c0-1.1-.9-2-2-2z"/>
+  </svg>
+  <span style="color: #10f108;">Download Resume</span>
+</button>
+
+<script>
+document.getElementById("downloadButton").addEventListener("click", function() {
+  var link = document.createElement("a");
+  link.download = "CV.pdf";
+  link.href = "assets/images/CV.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
+</script>
+                
+ class="h4 timeline-item-title">KMC</h4>
 
               <span>2020 — 2022</span>
 
