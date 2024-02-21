@@ -241,17 +241,52 @@
         </header>
 
         <section class="about-text">
-          <p>
-            "Hello, I'm Ram Mijar, an IT student from Nepal with a fervent passion for development. I thrive on constant learning and relish the opportunity to collaborate within teams. Good teamwork is my forte, and I enjoy contributing my skills to help others achieve their goals. Exploring new ideas is where I find my joy, and I'm always excited to push boundaries in the world of technology."
-          </p>
 
-          <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
-          </p>
+
+          <!--test-->
+
+
+          <span class="subtitle">Welcome to my world</span>
+          <h2>
+            <span>Hello I'm Ram Mijar. </span>
+           <span style="color: green;" class="text"> </span>
+          </h2>
+          <script>
+            // Text to be typed
+            var textList = [" Student.", "a Professional Coder.", "a Developer."];
+            var textElement = document.querySelector('.text'); // Selecting the span element with class "text"
+        
+            // Initialize index
+            var currentIndex = 0;
+            
+            // Function to type text
+            function typeText() {
+              if (currentIndex < textList.length) {
+                var currentText = textList[currentIndex];
+                var currentTextLength = currentText.length;
+                var currentCharacter = 0;
+                var typingInterval = setInterval(function() {
+                  textElement.textContent += currentText[currentCharacter];
+                  currentCharacter++;
+                  if (currentCharacter === currentTextLength) {
+                    clearInterval(typingInterval);
+                    setTimeout(function() {
+                      textElement.textContent = ''; // Clear the text for the next iteration
+                      currentIndex++;
+                      typeText(); // Type the next text
+                    }, 1000); // Delay before typing the next text
+                  }
+                }, 100); // Typing speed
+              } else {
+                currentIndex = 0; // Reset index to loop through the textList
+                typeText(); // Start typing again from the beginning
+              }
+            }
+        
+            // Start typing initially
+            typeText();
+          </script>
+        
         </section>
 
 
@@ -409,10 +444,10 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="images/un0p7FPg4xGa.png" alt="sabina tamang" width="60" data-testimonials-avatar>
+                  <img src="images/un0p7FPg4xGa.png" alt="Anisha shrestha" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sabina Tamang</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Anisha shrestha</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
@@ -524,7 +559,30 @@
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
+
         </header>
+        <button id="downloadButton">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="#00cc00" d="M12 2c-1.1 0-2 .9-2 2v10h-3l4 4 4-4h-3V4c0-1.1-.9-2-2-2z"/>
+          </svg>
+          <span style="color: #10f108;">Download Resume</span>
+        </button>
+        
+        <script>
+        document.getElementById("downloadButton").addEventListener("click", function() {
+          var link = document.createElement("a");
+          link.download = "Your_CV_Name.pdf";
+          link.href = "assets/images/CV.pdf";
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+        </script>
+        
+
+<br><br>        
+        
+       
 
         <section class="timeline">
 
@@ -541,11 +599,10 @@
 
               <h4 class="h4 timeline-item-title">Nims college</h4>
 
-              <span>2022 — 2023</span>
+              <span>2023 — Running</span>
 
               <p class="timeline-text">
-                NIMS College, Nepal
-Graduated with GPA 3.9, Dean's List
+                NIMS College, Running 2nd year.
               </p>
 
             </li>
@@ -554,10 +611,10 @@ Graduated with GPA 3.9, Dean's List
 
               <h4 class="h4 timeline-item-title">KMC</h4>
 
-              <span>2020 — 2021</span>
+              <span>2020 — 2022</span>
 
               <p class="timeline-text">
-                Koteshwor Multiple Campus, Kathmandu, Nepal: Graduated with GPA 3.8, Dean's List.
+                Koteshwor Multiple Campus, Kathmandu, passed +2
               </p>
 
             </li>
@@ -569,7 +626,7 @@ Graduated with GPA 3.9, Dean's List
               <span>2013 — 2019</span>
 
               <p class="timeline-text">
-                Shree Janak Higher Secondary School, Kathmandu, Nepal: Graduated with GPA 3.7, Top 10% of the class.
+                Shree Janak Higher Secondary School, bhakundu bashi kevre, Nepal: SEE passed with GPA 3.7, Top 10% of the class.
               </p>
               
 
@@ -593,28 +650,23 @@ Graduated with GPA 3.9, Dean's List
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <h4 class="h4 timeline-item-title">Marketing Assistant</h4>
 
-              <span>2015 — Present</span>
+              <span>2020 — Present</span>
 
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
+                Utilized social media marketing strategies to promote mobile products, resulting in increased visibility and sales.</p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Art director</h4>
+              <h4 class="h4 timeline-item-title">Mobile Shop Sales Associate </h4>
 
-              <span>2013 — 2015</span>
+              <span>4 year</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Provided exceptional customer service, addressing inquiries, resolving issues, and ensuring customer satisfaction.
               </p>
 
             </li>
@@ -623,12 +675,10 @@ Graduated with GPA 3.9, Dean's List
 
               <h4 class="h4 timeline-item-title">Web designer</h4>
 
-              <span>2010 — 2013</span>
+              <span>4 month </span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Designed and developed visually appealing and user-friendly websites using HTML, CSS, and JavaScript.
               </p>
 
             </li>
