@@ -1895,3 +1895,71 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
+/**
+	 * test refeance 
+	 */
+
+   .profile-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 250px; /* Adjust the width as needed */
+  }
+  
+  .profile-image {
+    margin-right: 10px;
+  }
+  
+  .outer-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inner-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inner-circle img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .profile-details {
+    flex: 1;
+  }
+  
+  .profile-name {
+    margin-top: 0;
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  .profile-tag {
+    font-size: 14px;
+    color: rgb(183, 0, 255); /* Adjust font size as needed */
+  }
+  
+  .profile-email {
+    display: flex;
+    align-items: center;
+    font-size: 14px; /* Adjust font size as needed */
+  }
+  
+  .profile-email ion-icon {
+    margin-right: 5px;
+  }
+  
+
+
+
