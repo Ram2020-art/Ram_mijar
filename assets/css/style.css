@@ -2,10 +2,10 @@
   #style.css
 \*-----------------------------------*/
 
+
 /**
  * copyright 2022 ram mijar https://github.com/Ram2020-art
  */
-
 
 
 
@@ -25,49 +25,57 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+    hsla(0, 100%, 100%, 0.521) 3%, 
+    hsla(0, 12%, 93%, 0.459) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+    hsla(0, 3%, 6%, 0.445) 0%, 
+    hsla(0, 0%, 8%, 0.459) 100%
+  ), hsla(240, 2%, 11%, 0.445);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
+    hsla(0, 0%, 3%, 0.479) 0%, 
+    hsla(0, 0%, 5%, 0.5) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
+    hsl(0, 0%, 6%) 0%, 
+    hsl(0, 8%, 12%) 59.86%
+  ), hsl(0, 0%, 6%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
+    hsla(300, 2%, 9%, 0.445) 0%, 
+    hsla(0, 0%, 3%, 0.452) 50%
   );
+
+  /* skill line */
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    hsl(231, 85%, 63%), 
+    hsl(305, 76%, 69%)
   );
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --jet: hsla(247, 60%, 97%, 0.979);
+  --onyx: hsla(0, 0%, 6%, 0.493);
+  --eerie-black-1: hsla(0, 0%, 9%, 0.452);
+  --eerie-black-2: hsla(240, 3%, 7%, 0.527);
+  --smoky-black: hsl(2, 100%, 90%);
+  --white-1: hsl(0, 29%, 97%);
+  --white-2: hsl(0, 10%, 94%);
+  /* svg*/
+
+  --orange-yellow-crayola: hsl(308, 87%, 56%);
+  /* resume paragaf */
+  --vegas-gold: hsl(300, 68%, 53%);
+  /* p  */
+  --light-gray: hsl(0, 30%, 96%);
+  /* m  subtitle date mail */
+
+  --light-gray-70: hsl(192, 94%, 50%);
+  --bittersweet-shimmer: hsl(240, 5%, 13%);
 
   /**
    * typography
@@ -96,12 +104,11 @@
    * shadow
    */
   
-  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
-  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
-  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
-  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
-
+   --shadow-1: rgba(0, 0, 0, 0.1) -4px 8px 24px;
+   --shadow-2: rgba(26, 25, 25, 0.479) 0 16px 30px;
+   --shadow-3: rgba(0, 0, 0, 0.1) 0 16px 40px;
+   --shadow-4: rgba(0, 0, 0, 0.1) 0 25px 50px;
+   --shadow-5: rgba(0, 0, 0, 0.1) 0 24px 80px;
   /**
    * transition
    */
@@ -155,7 +162,11 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body {
+  background: var(--smoky-black) url('https://www.rammijar.com.np/images/b.jpg') center center fixed;
+  /* The URL should point to your image */
+  background-size: cover; /* Ensures the image covers the entire background */
+}
 
 
 
@@ -459,7 +470,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: hsla(0, 0%, 6%, 0.493);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -641,7 +652,7 @@ main {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: hsl(0, 0%, 5%);
+  background: hsl(0, 0%, 3%);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -930,7 +941,7 @@ main {
   border-radius: 8px;
 }
 
-.select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
+.select-item button:hover { --eerie-black-2: hsla(240, 2%, 20%, 0.438); }
 
 .project-list {
   display: grid;
@@ -1138,8 +1149,8 @@ main {
   width: 100%;
   height: 100%;
   border: none;
-  filter: grayscale(1) invert(1);
 }
+
 
 .contact-form { margin-bottom: 10px; }
 
@@ -1880,3 +1891,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+
+
